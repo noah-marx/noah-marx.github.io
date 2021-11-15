@@ -23,6 +23,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script>
 window.addEventListener("message", (event) => {
+console.log(event)
+console.log(event.data)
 if(event.data == "btnPressed"){
 dataLayer.push({'event': 'btn-click'})
 }
