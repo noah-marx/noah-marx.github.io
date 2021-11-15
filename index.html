@@ -6,7 +6,15 @@
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-53C3BTZ');</script>
+})(window,document,'script','dataLayer','GTM-53C3BTZ');
+window.addEventListener("message", (event) => {
+console.log(event)
+console.log(event.data)
+if(event.data == "btnPressed"){
+dataLayer.push({'event': 'btn-click'})
+}
+},false)
+</script>
 <!-- End Google Tag Manager -->
  <title>praktikum Aufgabe</title>
  
@@ -22,13 +30,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div><div class='op-interactive' id='619222828693ac394feceb92' data-title='Noahmarxs #3 Survey' data-url='https://testcompany11.outgrow.us/619222828693ac394feceb92?vHeight=1' data-width='100%'></div><script src='//dyv6f9ner1ir9.cloudfront.net/assets/js/nloader.js'></script><script>initIframe('619222828693ac394feceb92');</script></div>
 
 <script>
-window.addEventListener("message", (event) => {
-console.log(event)
-console.log(event.data)
-if(event.data == "btnPressed"){
-dataLayer.push({'event': 'btn-click'})
-}
-},false)
+
 </script>
  </body>
 
